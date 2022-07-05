@@ -1,6 +1,9 @@
 body {
   /* For Navbar */
   /* Section Home */
+  /* Section About */
+  /* Section Portfolio */
+  /* Section Services */
 }
 body .navbar {
   display: flex;
@@ -56,11 +59,20 @@ body #home .main .heading {
   text-align: center;
   margin: 40px 0px;
 }
-body #home .main .heading .btn {
+body #home .main .btn {
   padding: 10px 35px;
   background-color: transparent;
   border: 1px solid white;
   color: white;
+  outline: none;
+  transition: 0.6s ease;
+}
+body #home .main .btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  font-weight: bold;
 }
 body #home::before {
   content: "";
@@ -72,4 +84,70 @@ body #home::before {
   width: 100%;
   z-index: -1;
   opacity: 0.85;
+}
+body #about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+body #pic {
+  display: flex;
+}
+body #pic img {
+  width: 575px;
+  height: 400px;
+}
+body #intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+}
+body #intro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+body #portfolio {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.747);
+  color: white;
+  align-items: center;
+  padding: 20px;
+}
+body .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border;
+}
+body .gallery img {
+  width: 360px;
+  height: 240px;
+  margin: 10px;
+}
+body #services {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+body #services .row {
+  display: flex;
+}
+body #services .row .box {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 450px;
+  border: 1px solid black;
+  margin: 10px;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 20px;
+  background: linear-gradient(to top, rgb(255, 45, 45) 50%, white 50%);
+  background-size: 100% 200%;
+  transition: all 0.8s;
 }/*# sourceMappingURL=style.css.map */
