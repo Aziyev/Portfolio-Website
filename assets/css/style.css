@@ -4,12 +4,13 @@ body {
   /* Section About */
   /* Section Portfolio */
   /* Section Services */
+  /* Section Contact */
 }
 body .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.603);
+  background-color: rgba(0, 0, 0, 0.5);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -51,7 +52,7 @@ body #home .main {
   align-items: center;
   position: absolute;
   top: 30%;
-  right: 10%;
+  left: 10%;
 }
 body #home .main .heading {
   font-family: century;
@@ -112,7 +113,7 @@ body #intro h2 {
 body #portfolio {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.747);
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
   align-items: center;
   padding: 20px;
@@ -127,6 +128,15 @@ body .gallery img {
   width: 360px;
   height: 240px;
   margin: 10px;
+  border-radius: 20px;
+  transition: all 0.4s;
+  opacity: 0.7;
+}
+body .gallery img:hover {
+  background-position: left bottom;
+  border: none;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  opacity: 1;
 }
 body #services {
   display: flex;
@@ -135,6 +145,9 @@ body #services {
 }
 body #services .row {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 body #services .row .box {
   display: flex;
@@ -150,4 +163,57 @@ body #services .row .box {
   background: linear-gradient(to top, rgb(255, 45, 45) 50%, white 50%);
   background-size: 100% 200%;
   transition: all 0.8s;
+}
+body #services .row .box img {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 20px;
+}
+body #services .row .box:hover {
+  background-position: left bottom;
+  border: none;
+  box-shadow: 0 0 20px rgb(255, 45, 45);
+}
+body #contact {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+body #contact .form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 20px 0px;
+}
+body #contact .input {
+  padding: 12px;
+  margin: 15px;
+  width: 30%;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+body #contact textarea {
+  border-radius: 20px;
+}
+body #contact #msg {
+  width: 20%;
+  padding: 10px;
+  margin: 15px;
+  border: none;
+}
+body #contact #send {
+  padding: 10px;
+  width: 10%;
+  margin: 40px;
+  border: none;
+  outline: none;
+}
+body #contact #send:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px white;
 }/*# sourceMappingURL=style.css.map */

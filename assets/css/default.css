@@ -4,3 +4,17 @@
   text-align: center;
   margin: 40px 0px;
 }
+
+.animation-t {
+  background:url(../img/animationwb.png);
+  -webkit-background-clip: text;
+  background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: text 7.5s linear infinite;
+
+
+}
+@keyframes text{
+  from{background-position:0% 50%;}
+  to{background-position:100% 10%;}
+}
